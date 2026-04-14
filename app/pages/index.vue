@@ -1057,6 +1057,183 @@ const toggleSprint = (index: number) => {
       </div>
     </div>
   </transition>
+  <div class="w-full text-center mt-20">
+    <button
+      @click="toggleSprint(3)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
+      Sprint 3
+      <span>{{ openSprint === 3 ? "▲" : "▼" }}</span>
+    </button>
+  </div>
+
+  <transition name="fade">
+    <div v-if="openSprint === 3">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Tekst links -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">Het Verhaal</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            <b>Samenvatting Verhaal:</b><br />
+            <br />
+            De stad is een deel van zijn identiteit verloren. De Time Thieves
+            hebben ervoor gezorgd dat de inwoners van Rotterdam zich niks meer
+            kunnen herinneren van de geschiedenis van de stad.<br /><br />
+            Gelukkig zijn er herinneringen van Rotterdam opgeslagen in de
+            monumenten die verspreid staan door de stad. Niet iedereen is de
+            geschiedenis vergeten. Sommige inwoners die een sterke band met het
+            verleden hebben kunnen zich nog dingen herinneren.<br /><br />
+            Samen met een professor ga je op pad om de geschiedenis te
+            herstellen. Je bezoekt monumenten, praat met inwoners, vind
+            historische spullen en lost puzzels op om het mysterie van de Time
+            Thieves te ontrafelen.<br /><br />
+            <b>Karakters:</b><br /><br />
+            Time Thieves:<br />
+            Een duo dat het beste voor heeft met de stad, maar niet goed
+            nadenken over de gevolgen van hun acties.<br /><br />
+            Space and Time Researcher Prof. E. Brown: <br />
+            Een expert op het gebied van ruimte en tijd. Als iemand kan helpen
+            met het Time Thieves probleem is hij het wel. <br /><br />
+            Historic Bonds:<br />
+            Mensen die een sterke connectie hebben met een deel van de
+            geschiedenis. Ze bevinden zich vaak bij monumenten waar zij een
+            sterke band of verhaal mee hebben.<br />
+            <br />
+            You: <br />
+            Een student aan de Hogeschool Rotterdam die houd van avontuur en
+            puzzels. Zijn familie stamboom is groot en gaat diep tot ver in de
+            geschiedenis. Hierdoor heeft hij een sterke band met de geschiedenis
+            van Rotterdam.
+            <br /><br />
+            <b>Intro/Teaser</b><br /><br />
+            Je had een vreemd onderbuik gevoel dat er wat mis was. Alsof je aan
+            iets dacht en het op het puntje van je tong lag maar er niet op kon
+            komen. Toen plots zag je verschillende beelden door je hoofd
+            flitsen. Je wist niet precies wat dit betekende, maar het voelde
+            alsof het belangrijk was, vol verhalen en emotie. Een bezoek aan
+            prof. E. Brown maakte de beelden in je hoofd duidelijker, de
+            monumenten in de stad zouden je meer antwoorden geven. Je vroeg de
+            professor om hulp om erachter te komen wat er was gebeurd. Samen
+            gingen jullie op pad om achter het mysterie van de Time Thieves te
+            komen.<br /><br />
+            <b>Interactieve Game Activiteiten</b><br /><br />
+            Onderzoek naar de geselecteerde monumenten en bijbehorende
+            vraagstukken<br /><br />
+            Integratie van relevante informatie in de game ter versterking van
+            educatie en interactiviteit<br /><br />
+            Verkenning van een interactief dashboard voor overzichtelijke
+            informatiepresentatie<br /><br />
+            Experimenteren met een ontwikkelen van scorebord voor het bijhouden
+            van voortgang en prestaties
+          </p>
+        </div>
+        <!-- Afbeelding rechts -->
+        <div class="md:w-1/2">
+          <img
+            src="/images/Interaction_Example.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-scale-down rounded-3xl"
+          />
+
+          <img
+            src="/images/Quiz_Question_example.png"
+            alt="Time Thiefs"
+            class="w-full mt-5 h-[500px] object-scale-down rounded-3xl"
+          />
+        </div>
+      </div>
+      <div class="w-[90%] mx-auto py-24 flex items-center justify-center">
+        <div class="text-center text-white">
+          <h2 class="text-5xl font-bold mb-6">Art Style</h2>
+          <img
+            src="/images/Moodboard_1.png"
+            alt="Time Thiefs"
+            class="w-full h-[700px] object-cover rounded-3xl shadow-2xl"
+          />
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Afbeelding links -->
+        <div class="md:w-1/2">
+          <img
+            src="/images/image 30.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
+        </div>
+
+        <!-- Tekst rechts -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">8th Wall proof of concept</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            We hebben een proof of concept ontwikkeld in 8th Wall, waarmee we de
+            AR-interactie willen realiseren. Dit proof of concept is vooral
+            bedoeld om te demonstreren hoe we augmented reality kunnen inzetten
+            binnen onze applicatie en welke mogelijkheden dit biedt voor de
+            gebruiker. Verder laat het zien hoe technisch haalbaar ons idee is
+            en hoe de gebruiker dit gaat ervaren. Het is de bedoeling dat we per
+            monument een AR-scene willen gaan ontwikkelen en op basis van waar
+            de gebruiker zich bevindt, de juiste AR-scene kan worden geactiveerd
+            zodat de gebruiker relevante informatie en interacties te zien
+            krijgt voor die locatie.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Afbeelding links -->
+        <div class="md:w-1/2">
+          <video
+            class="w-full h-[500px] object-fit rounded-3xl"
+            controls="true"
+          >
+            <source src="/images/Cesium8thWall.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <!-- Tekst rechts -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">CesiumJS met 8th Wall</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Er is een koppeling gerealiseerd tussen de 3D-kaart van CesiumJS en
+            de AR-engine van 8th Wall, waardoor gebruikers naadloos kunnen
+            overschakelen van de kaartweergave naar de AR-weergave wanneer zij
+            zich op een relevante locatie bevinden, en vervolgens ook eenvoudig
+            weer terug kunnen keren naar de kaart.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Tekst links -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">CesiumJS met AR-JS</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Er is een implementatie van AR-JS in de bestaande cesium app.
+            Hiermee kunnen wij een AR weergaven doen die overeenkomt met de
+            kaart. Hierdoor staan de objecten in de wereld op de zelfde positie
+            op de kaart als in AR
+          </p>
+        </div>
+
+        <!-- Afbeelding rechts -->
+        <div class="md:w-1/2">
+          <video
+            class="w-full h-[500px] object-fit rounded-3xl"
+            controls="true"
+          >
+            <source src="/images/CesiumARJS.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <style>
