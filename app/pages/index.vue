@@ -1688,6 +1688,297 @@ const toggleSprint = (index: number) => {
       </div>
     </div>
   </transition>
+  <div class="w-full text-center mt-20">
+    <button
+      @click="toggleSprint(6)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
+      Eindsprint
+      <span>{{ openSprint === 6 ? "▲" : "▼" }}</span>
+    </button>
+  </div>
+
+  <transition name="fade">
+    <div v-if="openSprint === 6">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Tekst links -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">Doelgroep onderzoek</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Wij hebben een doelgroep onderzoek gedaan naar PABO studenten om
+            meer inzicht te krijgen in onze doelgroep en hun behoeften. We
+            hebben vragen gesteld aan PABO studenten om informatie te verzamelen
+            over hoe hun leerlingen graag leren en wat hun aanspreekt in hun
+            leven. Hieruit is gebleken dat scholieren graag hun telefoon
+            gebruiken en dat leraren baat zien aan buiten het klaslokaal
+            lesgeven. Uit deze informatie hebben wij een persona opgesteld over
+            een leerling die binnen onze doelgroep valt. Deze persona helpt ons
+            om onze doelgroep beter te begrijpen en om onze game zo te ontwerpen
+            dat deze aansluit bij hun behoeften en voorkeuren.
+          </p>
+        </div>
+
+        <!-- Afbeelding rechts -->
+        <div class="md:w-1/2 flex">
+          <img
+            src="/images/persona.png"
+            alt="Time Thiefs"
+            class="w-full object-cover mr-2 rounded-3xl"
+          />
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Afbeelding links -->
+        <div class="md:w-1/2">
+          <img
+            src="/images/chatbot.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
+        </div>
+
+        <!-- Tekst rechts -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">TimeSaver Chatbot</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Tijdens de laatste sprint lag de focus op het verbeteren en afronden
+            van de chatbot Timesaver. Op basis van eerdere testresultaten zijn
+            verschillende onderdelen aangepast om de chatbot betrouwbaarder,
+            gebruiksvriendelijker en consistenter te maken. Een belangrijk
+            onderdeel was het verder verfijnen van de prompt. Hierdoor begrijpt
+            Timesaver beter welke rol hij vervult binnen de game en geeft hij
+            spelers eerst hints en aanwijzingen voordat een volledig antwoord
+            wordt gegeven. Ook is het hintsysteem verder uitgewerkt door
+            quizvragen en scènes beter te koppelen aan de juiste context en
+            bijbehorende hints.<br />
+            <br />
+            is de kennisbank van de chatbot uitgebreid met informatie over de
+            geschiedenis van Rotterdam. Hierdoor kan Timesaver spelers niet
+            alleen ondersteunen bij opdrachten, puzzels en quizvragen, maar ook
+            aanvullende achtergrondinformatie geven over historische
+            gebeurtenissen, locaties en onderwerpen die binnen de game aan bod
+            komen. Dit draagt bij aan een betere spelervaring en versterkt het
+            educatieve karakter van The TimeThieves. <br />
+            <br />
+            Verder zijn verschillende tests uitgevoerd om te controleren of de
+            chatbot correct reageert op uiteenlopende vragen en situaties. Op
+            basis van deze tests zijn verbeteringen doorgevoerd aan de logica,
+            de antwoorden en de algemene structuur van het systeem. Aan het
+            einde van deze sprint was Timesaver ontwikkeld tot een stabiele
+            chatbot die spelers op een duidelijke en interactieve manier
+            ondersteunt tijdens het spelen van The TimeThieves.
+          </p>
+        </div>
+      </div>
+
+      <div class="w-[80%] mx-auto py-20 text-white">
+        <!-- Titel + tekst -->
+        <div class="max-w-3xl mb-10">
+          <h2 class="text-4xl font-bold mb-6">Nieuwe Inventory Items</h2>
+          <p class="text-lg text-gray-300">
+            Er zijn nieuwe inventory items toegevoegd aan de game. Deze items
+            kunnen worden verzameld door de speler tijdens het spelen van de
+            game en kunnen worden bekeken in de inventaris.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Afbeelding 1 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/item1_sand.png"
+              class="w-full h-[600px] object-contain rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Experimenteel Zand
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/item2_hourglass1.png"
+              class="w-full h-[600px] object-contain rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Deel van de zandloper
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/item3_hourglass2.png"
+              class="w-full h-[600px] object-contain rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Een ander deel van de zandloper
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/item4_timeturner.png"
+              class="w-full h-[600px] object-contain rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                De onderkant van de zandloper
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/item5_hourglassdone.png"
+              class="w-full h-[600px] object-contain rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                De complete zandloper
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] mx-auto py-20 text-white">
+        <!-- Titel + tekst -->
+        <div class="max-w-3xl mb-10">
+          <h2 class="text-4xl font-bold mb-6">Nieuwe Scenes</h2>
+          <p class="text-lg text-gray-300">
+            De verhaallijn van de game is verder uitgewerkt en er zijn nieuwe
+            scenes toegevoegd.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Afbeelding 1 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/convproff2.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Professor E. Brown geeft een quiz aan de speler
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/convleya.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Leyla speelte memory met de speler
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/convbenjamin.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Benjamin Philips geeft een quiz aan de speler
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/convproff.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                professor E. Brown geeft het laatste onderdeel om de Time
+                Thieves te verslaan
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/convtt.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                De speler verslaat de Time Thieves en redt de monumenten van
+                Rotterdam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-[80%] mx-auto py-24 flex items-center justify-center">
+        <div class="text-center text-white">
+          <h2 class="text-5xl font-bold mb-6">Demo</h2>
+          <iframe
+            width="1000"
+            height="600"
+            src="https://www.youtube.com/embed/TpvI8YIEVV8?si=HTATV-pDiJtpWLKo"
+            title="TimeThievesDemo"
+            class="mx-auto"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <style>
