@@ -15,8 +15,9 @@ const toggleSprint = (index: number) => {
 </script>
 
 <template>
-  <Title>TimeThiefs</Title>
-  <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+  <Title>TimeThieves</Title>
+  <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
+    style="background-image: url('/images/Background.jpg'); background-size: cover; background-position: center;">
     <div class="absolute inset-0">
       <img src="/images/Background.jpg" alt="Background Image" class="object-cover object-center w-full h-100vh" />
       <div class="absolute inset-0"></div>
