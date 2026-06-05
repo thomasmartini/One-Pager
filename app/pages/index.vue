@@ -16,16 +16,72 @@ const toggleSprint = (index: number) => {
 
 <template>
   <Title>TimeThieves</Title>
-  <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
-    style="background-image: url('/images/Background.jpg'); background-size: cover; background-position: center;">
+  <div
+    class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
+    style="
+      background-image: url(&quot;/images/Background.jpg&quot;);
+      background-size: cover;
+      background-position: center;
+    "
+  >
     <div class="absolute inset-0">
-      <img src="/images/Background.jpg" alt="Background Image" class="object-cover object-center w-full h-100vh" />
+      <img
+        src="/images/Background.jpg"
+        alt="Background Image"
+        class="object-cover object-center w-full h-100vh"
+      />
       <div class="absolute inset-0"></div>
     </div>
 
-    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center hero-content">
+    <div
+      class="relative z-10 flex flex-col justify-center items-center h-full text-center hero-content"
+    >
       <img src="/images/logo.png" alt="Time Thieves" class="w-256 mb-4" />
     </div>
+  </div>
+  <div class="w-[80%] mx-auto py-24 flex flex-col items-center justify-center">
+    <div class="text-center text-white max-w-4xl">
+      <h2 class="text-5xl font-bold mb-6">Inleiding</h2>
+      <p class="text-lg text-gray-300 mb-8">
+        Hallo, wij zijn de Time Thieves, een team van vier studenten van de
+        Hogeschool Rotterdam, afkomstig uit verschillende studierichtingen:
+        Communication and Multimedia Design, Creatieve Media en Game
+        Technologie, Informatica, en Applied Data Science & AI. Wij hebben voor
+        jaar 3 semester 6 Hybride Wereld een project opgezet waarin we een
+        educatieve game ontwikkelen die de geschiedenis van Rotterdam op een
+        leuke en interactieve manier overbrengt naar jongeren in Rotterdam. We
+        maken gebruik van 3D Rotterdam en data van het Open Urban Platform, in
+        samenwerking met het Stadsarchief Rotterdam, om een gamification te
+        creëren die jongeren aanmoedigt om meer naar buiten te gaan en de stad
+        beter te leren kennen.
+        <br /><br />
+
+        Hier is een link naar onze Github en het project:
+
+        <a
+          href="https://github.com/thomasmartini/Time-Thieves"
+          class="text-blue-400 underline"
+          target="_blank"
+        >
+          Time Thieves GitHub
+        </a>
+        <br /><br />
+        En hier kan je het spel zelf ervaren. Je moet alleen wel bij een
+        monument (De Verwoeste Stad) zijn om te kunnen spelen:
+        <a
+          href="https://stud.hosted.hr.nl/1013596/CesiumJS"
+          class="text-blue-400 underline"
+          target="_blank"
+          >Time Thieves</a
+        >
+      </p>
+    </div>
+
+    <img
+      src="/images/timethievesteam.jpeg"
+      alt="Time Thieves"
+      class="w-full max-w-4xl h-[600px] object-cover rounded-3xl shadow-2xl"
+    />
   </div>
   <div class="justify-center flex mt-5">
     <div class="text-6xl text-white mb-5">Ontmoet De Time Thieves</div>
@@ -82,7 +138,11 @@ const toggleSprint = (index: number) => {
         <div class="justify-self-center">Nora Amghar</div>
       </template>
 
-      <img class="w-64 rounded-xl" src="/images/nora.jpeg" style="height: 208px; overflow: hidden; object-fit: cover" />
+      <img
+        class="w-64 rounded-xl"
+        src="/images/nora.jpeg"
+        style="height: 208px; overflow: hidden; object-fit: cover"
+      />
 
       <template class="flex" #footer>
         <div>Applied Data Science & AI</div>
@@ -93,8 +153,10 @@ const toggleSprint = (index: number) => {
   </div>
 
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(0)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(0)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Sprint 0
       <span>{{ openSprint === 0 ? "▲" : "▼" }}</span>
     </button>
@@ -115,7 +177,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">De Huidige Situatie</h2>
@@ -137,15 +201,23 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/Rotterdam3D.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Rotterdam3D.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/Rotterdam.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Rotterdam.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -165,7 +237,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Eerste Concept En Verhaal</h2>
@@ -189,11 +263,16 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/storyboard.jfif" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/storyboard.jfif"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">De Scope</h2>
@@ -217,15 +296,23 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/watertaxi.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/watertaxi.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/Rotterdam2.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Rotterdam2.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -252,7 +339,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">De Doelgroep</h2>
@@ -271,8 +360,11 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/Doelgroep.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Doelgroep.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
       <div class="w-[80%] mx-auto py-24 flex items-center justify-center">
@@ -321,7 +413,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">De Backlog</h2>
@@ -338,11 +432,16 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/markthal-rotterdam.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/markthal-rotterdam.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Sprint 1 Doel En Planning</h2>
@@ -371,8 +470,11 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/Rotterdam.jpg" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Rotterdam.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
       <div class="w-[80%] mx-auto py-24 flex items-center justify-center">
@@ -391,14 +493,20 @@ const toggleSprint = (index: number) => {
             <b>Gemeente Rotterdam Citiverse</b><br />
             Isabel Fokkens<br />
             i.fokkens@rotterdam.nl
+
+            <b>Hogeschool Rotterdam</b><br />
+            Barend Hendriks<br />
+            b.j.hendriks@hr.nl
           </p>
         </div>
       </div>
     </div>
   </transition>
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(1)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(1)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Sprint 1
       <span>{{ openSprint === 1 ? "▲" : "▼" }}</span>
     </button>
@@ -406,7 +514,9 @@ const toggleSprint = (index: number) => {
 
   <transition name="fade">
     <div v-if="openSprint === 1">
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">
             <b>Inzichten Deskresearch Gamification</b>
@@ -421,15 +531,23 @@ const toggleSprint = (index: number) => {
         </div>
 
         <div class="md:w-1/2">
-          <img src="/images/gamification.png" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/gamification.png"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
 
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/stakeholderAnalyse.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/stakeholderAnalyse.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -487,11 +605,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/cesium1.png" class="w-full h-[600px] object-cover rounded-3xl shadow-2xl" />
+            <img
+              src="/images/cesium1.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Cesium in Unreal met Google Maps data
               </p>
             </div>
@@ -499,11 +622,16 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/cesium2.png" class="w-full h-[600px] object-cover rounded-3xl shadow-2xl" />
+            <img
+              src="/images/cesium2.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Cesium in Unreal met OUP data
               </p>
             </div>
@@ -544,11 +672,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/rotterdam upclose.PNG" class="w-full h-[600px] object-cover rounded-3xl shadow-2xl" />
+            <img
+              src="/images/rotterdam upclose.PNG"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Cesium geladen in een browser via javascript
               </p>
             </div>
@@ -556,11 +689,16 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/rotterdam duckies.PNG" class="w-full h-[600px] object-cover rounded-3xl shadow-2xl" />
+            <img
+              src="/images/rotterdam duckies.PNG"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 3D eendjes die zijn geladen op de map met de data van 3D
                 rotterdam
               </p>
@@ -568,11 +706,16 @@ const toggleSprint = (index: number) => {
           </div>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/stadsarchief_rotterdam.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/stadsarchief_rotterdam.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -605,7 +748,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">
@@ -627,15 +772,20 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/image 5.png" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/image 5.png"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
     </div>
   </transition>
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(2)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(2)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Sprint 2
       <span>{{ openSprint === 2 ? "▲" : "▼" }}</span>
     </button>
@@ -643,7 +793,9 @@ const toggleSprint = (index: number) => {
 
   <transition name="fade">
     <div v-if="openSprint === 2">
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">
             <b>Doelgroep aangescherpt</b>
@@ -659,15 +811,23 @@ const toggleSprint = (index: number) => {
         </div>
 
         <div class="md:w-1/2">
-          <img src="/images/Doelgroep2.jpg" class="w-full h-[400px] object-fit rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Doelgroep2.jpg"
+            class="w-full h-[400px] object-fit rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
 
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/watertaxi.jpg" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/watertaxi.jpg"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -694,11 +854,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/MainView.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/MainView.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Main view
               </p>
             </div>
@@ -706,21 +871,31 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/Inventory.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/Inventory.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Inventory
               </p>
             </div>
           </div>
           <div class="relative w-full md:w-1/2">
-            <img src="/images/ZoomIn.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/ZoomIn.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Inzoomen
               </p>
             </div>
@@ -728,21 +903,31 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/ZoomOut.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/ZoomOut.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Uitzoomen
               </p>
             </div>
           </div>
           <div class="relative w-full md:w-1/2">
-            <img src="/images/ColoredAreas.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/ColoredAreas.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Gedeeltes van de map waar AR geactiveerd kan worden
               </p>
             </div>
@@ -750,11 +935,16 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/ARExperience.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/ARExperience.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 AR view met informatiepunten en 3D objecten
               </p>
             </div>
@@ -783,11 +973,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/geolocation 2.jpeg" class="w-full h-[600px] object-scale-down rounded-3xl shadow-2xl" />
+            <img
+              src="/images/geolocation 2.jpeg"
+              class="w-full h-[600px] object-scale-down rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 De geolocatie van de speler wordt weergegeven met de hulp van
                 een eendje
               </p>
@@ -796,7 +991,9 @@ const toggleSprint = (index: number) => {
         </div>
       </div>
 
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Data verzamelen</h2>
@@ -816,14 +1013,23 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/data.png" alt="Time Thiefs" class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/data.png"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/image 11.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/image 11.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -842,7 +1048,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">
@@ -893,15 +1101,20 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/8thwall.png" alt="Time Thiefs"
-            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/8thwall.png"
+            alt="Time Thiefs"
+            class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
     </div>
   </transition>
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(3)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(3)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Sprint 3
       <span>{{ openSprint === 3 ? "▲" : "▼" }}</span>
     </button>
@@ -909,7 +1122,9 @@ const toggleSprint = (index: number) => {
 
   <transition name="fade">
     <div v-if="openSprint === 3">
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Het Verhaal</h2>
@@ -969,25 +1184,39 @@ const toggleSprint = (index: number) => {
         </div>
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <img src="/images/Interaction_Example.png" alt="Time Thiefs"
-            class="w-full h-[700px] object-scale-down rounded-3xl" />
+          <img
+            src="/images/Interaction_Example.png"
+            alt="Time Thiefs"
+            class="w-full h-[700px] object-scale-down rounded-3xl"
+          />
 
-          <img src="/images/Quiz_Question_Example.png" alt="Time Thiefs"
-            class="w-full mt-5 h-[700px] object-scale-down rounded-3xl" />
+          <img
+            src="/images/Quiz_Question_Example.png"
+            alt="Time Thiefs"
+            class="w-full mt-5 h-[700px] object-scale-down rounded-3xl"
+          />
         </div>
       </div>
       <div class="w-[90%] mx-auto py-24 flex items-center justify-center">
         <div class="text-center text-white">
           <h2 class="text-5xl font-bold mb-6">Art Style</h2>
-          <img src="/images/Moodboard_1.png" alt="Time Thiefs"
-            class="w-full h-[700px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/Moodboard_1.png"
+            alt="Time Thiefs"
+            class="w-full h-[700px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/image 30.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/image 30.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -1007,10 +1236,15 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <video class="w-full h-[500px] object-fit rounded-3xl" controls="true">
+          <video
+            class="w-full h-[500px] object-fit rounded-3xl"
+            controls="true"
+          >
             <source src="/images/Cesium8thWall.mp4" type="video/mp4" />
           </video>
         </div>
@@ -1027,7 +1261,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">CesiumJS met AR-JS</h2>
@@ -1041,16 +1277,24 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2">
-          <video class="w-full h-[500px] object-fit rounded-3xl" controls="true">
+          <video
+            class="w-full h-[500px] object-fit rounded-3xl"
+            controls="true"
+          >
             <source src="/images/CesiumARJS.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/image32.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/image32.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -1083,14 +1327,18 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
       </div>
     </div>
   </transition>
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(4)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(4)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Tussenpresentatie
       <span>{{ openSprint === 4 ? "▲" : "▼" }}</span>
     </button>
@@ -1101,9 +1349,13 @@ const toggleSprint = (index: number) => {
       <div class="w-[80%] mx-auto py-24 flex items-center justify-center">
         <div class="text-center text-white max-w-3xl">
           <h2 class="text-5xl font-bold mb-6">Prototype Demo</h2>
-          <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/4ea2FqZBy-w?si=rypGqoCjacsKuGA4?version=3&loop=1" title="TimeThievesDemo"
-            frameborder="0" allow="
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/4ea2FqZBy-w?si=rypGqoCjacsKuGA4?version=3&loop=1"
+            title="TimeThievesDemo"
+            frameborder="0"
+            allow="
               accelerometer;
               autoplay;
               clipboard-write;
@@ -1111,14 +1363,19 @@ const toggleSprint = (index: number) => {
               gyroscope;
               picture-in-picture;
               web-share;
-            " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
   </transition>
   <div class="w-full text-center mt-20">
-    <button @click="toggleSprint(5)"
-      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full">
+    <button
+      @click="toggleSprint(5)"
+      class="text-5xl font-bold text-white mb-10 flex items-center justify-center gap-4 w-full"
+    >
       Sprint 4
       <span>{{ openSprint === 5 ? "▲" : "▼" }}</span>
     </button>
@@ -1126,7 +1383,9 @@ const toggleSprint = (index: number) => {
 
   <transition name="fade">
     <div v-if="openSprint === 5">
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Feedback SSF</h2>
@@ -1146,14 +1405,23 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2 flex">
-          <img src="/images/groepsfoto.png" alt="Time Thiefs" class="w-full object-cover mr-2 rounded-3xl" />
+          <img
+            src="/images/groepsfoto.png"
+            alt="Time Thiefs"
+            class="w-full object-cover mr-2 rounded-3xl"
+          />
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/group8.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/group8.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -1176,7 +1444,9 @@ const toggleSprint = (index: number) => {
           </p>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Tekst links -->
         <div class="md:w-1/2 text-white">
           <h2 class="text-4xl font-bold mb-6">Nieuwe Ontwerpvraag</h2>
@@ -1190,7 +1460,11 @@ const toggleSprint = (index: number) => {
 
         <!-- Afbeelding rechts -->
         <div class="md:w-1/2 flex">
-          <img src="/images/ontwerpvraag.jpg" alt="Time Thiefs" class="w-full object-cover mr-2 rounded-3xl" />
+          <img
+            src="/images/ontwerpvraag.jpg"
+            alt="Time Thiefs"
+            class="w-full object-cover mr-2 rounded-3xl"
+          />
         </div>
       </div>
       <div class="w-[80%] mx-auto py-20 text-white">
@@ -1202,11 +1476,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/prof.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/prof.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Professor E. Brown
               </p>
             </div>
@@ -1214,21 +1493,31 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/leyla.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/leyla.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Leyla
               </p>
             </div>
           </div>
           <div class="relative w-full md:w-1/2">
-            <img src="/images/benjamin.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/benjamin.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Benjamin Philips
               </p>
             </div>
@@ -1236,32 +1525,47 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/timethieves.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/timethieves.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 TimeThieves
               </p>
             </div>
           </div>
           <div class="relative w-full md:w-1/2">
-            <img src="/images/player.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/player.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 De Speler
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
         <!-- Afbeelding links -->
         <div class="md:w-1/2">
-          <img src="/images/mapnew.png" alt="Time Thiefs"
-            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl" />
+          <img
+            src="/images/mapnew.png"
+            alt="Time Thiefs"
+            class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+          />
         </div>
 
         <!-- Tekst rechts -->
@@ -1279,7 +1583,8 @@ const toggleSprint = (index: number) => {
         <!-- Titel + tekst -->
         <div class="max-w-3xl mb-10">
           <h2 class="text-4xl font-bold mb-6">inventaris</h2>
-          <div> Er is een inventaris systeem gemaakt waar de speler gevonden
+          <div>
+            Er is een inventaris systeem gemaakt waar de speler gevonden
             objecten en verhalen kan bekijken. Als de speler alle objecten heeft
             in een gebied dan kan het gebied afgerond worden
           </div>
@@ -1288,11 +1593,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/inventorydown.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/inventorydown.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 inventaris niet actief
               </p>
             </div>
@@ -1300,11 +1610,16 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/inventoryup.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/inventoryup.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 inventaris overzicht met monumenten
               </p>
             </div>
@@ -1312,12 +1627,18 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/inventoryfull.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/inventoryfull.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
-                inventaris overzicht met de gevonden objecten en verhalen van een monument
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                inventaris overzicht met de gevonden objecten en verhalen van
+                een monument
               </p>
             </div>
           </div>
@@ -1332,11 +1653,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/conversation1.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/conversation1.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Conversatie met Leyla
               </p>
             </div>
@@ -1344,11 +1670,16 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/conversation2.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/conversation2.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Conversation with Leyla
               </p>
             </div>
@@ -1356,21 +1687,31 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/quiz1.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/quiz1.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Quiz met de professor
               </p>
             </div>
           </div>
           <div class="relative w-full md:w-1/2">
-            <img src="/images/quiz2.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/quiz2.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Beloning voor het oplossen van de quiz
               </p>
             </div>
@@ -1386,11 +1727,16 @@ const toggleSprint = (index: number) => {
         <div class="flex flex-col md:flex-row gap-6">
           <!-- Afbeelding 1 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/memory1.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/memory1.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
                 Memory game
               </p>
             </div>
@@ -1398,21 +1744,31 @@ const toggleSprint = (index: number) => {
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/memory2.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/memory2.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"></p>
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              ></p>
             </div>
           </div>
 
           <!-- Afbeelding 2 -->
           <div class="relative w-full md:w-1/2">
-            <img src="/images/memory3.png" class="w-full h-[600px] object-fit rounded-3xl shadow-2xl" />
+            <img
+              src="/images/memory3.png"
+              class="w-full h-[600px] object-fit rounded-3xl shadow-2xl"
+            />
 
             <!-- Tekst linksonder -->
             <div class="absolute bottom-0 left-0 p-4">
-              <p class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"></p>
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              ></p>
             </div>
           </div>
         </div>
@@ -1690,6 +2046,214 @@ const toggleSprint = (index: number) => {
               >
                 De speler verslaat de Time Thieves en redt de monumenten van
                 Rotterdam
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Afbeelding links -->
+        <div class="md:w-1/2">
+          <img
+            src="/images/leyla.png"
+            alt="Time Thieves"
+            class="w-full object-cover"
+          />
+        </div>
+
+        <!-- Tekst rechts -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">Verbeterpunten</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Tijdens de expo is veel positieve feedback ontvangen op het concept
+            en de uitwerking van ons product Time Thieves. Tegelijkertijd zijn
+            er verschillende verbeterpunten naar voren gekomen.<br /><br />
+            Meerdere bezoekers gaven aan dat de tekst in de speech bubbles
+            lastig leesbaar was doordat deze te klein was. Daarnaast werd
+            opgemerkt dat tekst in sommige situaties verdwijnt, wat de user
+            experience negatief beïnvloedt. Beide punten kunnen in een volgende
+            versie verder worden geoptimaliseerd.<br /><br />
+            Bij de memory game ontstond bij sommige gebruikers de vraag welk
+            monument of gebouw zij precies hadden gezien en of hierover meer
+            informatie beschikbaar was binnen de game. Het toevoegen van
+            aanvullende achtergrondinformatie over monumenten en historische
+            locaties kan de educatieve waarde van de applicatie verder
+            vergroten, evenals de waarde van herinneringen en geschiedenis
+            vergroten.<br /><br />
+            Ook werd aangegeven dat de personages niet volledig aansluiten bij
+            een typisch Rotterdams uiterlijk. Daarnaast werd de suggestie gedaan
+            om spelers meer vrijheid te geven door hun eigen karakter samen te
+            stellen of aan te passen.<br /><br />
+            Voor de chatbot kwamen eveneens enkele verbeterpunten naar voren. Zo
+            werden spelfouten geconstateerd en werd aangegeven dat het ontwerp
+            van de chatbot niet volledig aansluit bij de huisstijl van Time
+            Thieves. Daarnaast vonden sommige bezoekers dat de chatbot momenteel
+            nog beperkte toegevoegde waarde heeft binnen het product.<br /><br />
+            Uit de expo bleek ook dat gedeeltes van de 8th Wall scenes nog niet
+            altijd even goed werden weergegeven in safari browsers. Dit kwam
+            niet uit de testjes die wij met het product hadden uitgevoerd
+            aangezien niemand in de testgroep Safari gebruikte. Hier moet verder
+            onderzoek naar gedaan worden om de precieze oorzaak achter dit
+            probleem te vinden.<br /><br />
+            Naast deze punten is er nog een bug uit development die niet op tijd
+            verholpen kon worden voor de expo. Deze bug heeft geen fouten
+            gegeven bij de expo maar moet nog wel verholpen worden voordat er
+            een 1.0 versie gemaakt kan worden. De bug is dat de CesiumJS map kan
+            vastlopen als deze te vaak herladen wordt na een 8th Wall scene.
+            Onderzoek heeft gebleken dat het een memory probleem is met Chrome
+            en OpenGL. De bug kan verholpen worden door de CesiumJS viewer te
+            vernietigen elke keer als de speler een scene ingaat. Dit kan alleen
+            negatieve zijeffecten hebben, aangezien deze dan elke keer opnieuw
+            gebouwd moet worden en dit impact kan hebben op de laadtijden in het
+            spel. Deze bug moet daarom verder onderzocht worden om een oplossing
+            te vinden die de bug verhelpt en niet de player experience te veel
+            aantast.
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[80%] mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20"
+      >
+        <!-- Tekst links -->
+        <div class="md:w-1/2 text-white">
+          <h2 class="text-4xl font-bold mb-6">Verdere Ontwikkeling</h2>
+          <p class="text-lg text-gray-300 mb-6">
+            Naast concrete verbeterpunten werden er tijdens de expo ook
+            verschillende ideeën aangedragen voor de verdere ontwikkeling van
+            Time Thieves.<br /><br />
+            Een veelgenoemde suggestie was het toevoegen van een minimap binnen
+            de AR-weergave om gebruikers beter te ondersteunen tijdens het
+            verkennen van locaties. Daarnaast werd het concept als zeer geschikt
+            ervaren om daadwerkelijk buiten in de stad te spelen, waarbij
+            bezoekers aangaven dat zij de combinatie van geschiedenis,
+            storytelling en interactie aantrekkelijk vonden.<br /><br />
+            Verschillende bezoekers benadrukten de educatieve waarde van het
+            concept. Er werd specifiek genoemd dat de game goed kan bijdragen
+            aan het bewustmaken van leerlingen uit groep 7 en 8 van het belang
+            van geschiedenis en herinneringen. Zowel onderwijsinstellingen als
+            bezoekers zagen mogelijkheden om de applicatie in te zetten binnen
+            het onderwijs. Zo gaf Carlijn van Informatica aan dat zij het
+            project graag wil laten zien aan eerstejaars studenten en werd
+            genoemd dat ook CMGT mogelijkheden ziet om het concept te gebruiken
+            als inspirerend voorbeeld voor studenten.<br /><br />
+            Vanuit externe stakeholders werd ook enthousiast gereageerd. Het
+            Stadsarchief Rotterdam was positief over de manier waarop hun
+            historische informatie binnen de game wordt gebruikt en gaf aan dat
+            de informatie goed toepasbaar is verwerkt. Ook de Gemeente Rotterdam
+            reageerde enthousiast op de wijze waarop gebruik is gemaakt van de
+            data afkomstig uit het Open Urban Platform. Daarnaast werd
+            aangegeven dat medewerkers van het OUP mogelijkheden zien om het
+            concept verder te ontwikkelen en mogelijk samen met 360Fabriek te
+            presenteren op een conferentie voor bedrijven.<br /><br />
+            Verder werd genoemd dat organisaties zoals SOUL het concept mogelijk
+            kunnen inzetten om nieuwe inwoners van Rotterdam op een interactieve
+            manier kennis te laten maken met de stad. Voor het publiceren van
+            het prototype werd aanbevolen om QR-codes en links naar de
+            verschillende scenes en de volledige game op de one pager toe te
+            voegen. Ook werd voorgesteld om de huidige hostingomgeving te
+            vervangen door een toegankelijkere oplossing, zodat de applicatie
+            langer beschikbaar blijft na het project.<br /><br />
+            Voor de chatbot werden ook uitbreidingsmogelijkheden genoemd. Zo kan
+            rekenkracht van Datalab Rotterdam mogelijk worden ingezet om een
+            krachtiger AI-model te gebruiken, waardoor spelfouten worden
+            verminderd en antwoorden sterker worden. Daarnaast kan de chatbot
+            worden uitgebreid met extra functionaliteiten, betere ondersteuning
+            tijdens opdrachten en meer historische kennis.
+          </p>
+        </div>
+
+        <!-- Afbeelding rechts -->
+        <div class="md:w-1/2 flex">
+          <img
+            src="/images/timethieves.png"
+            alt="Time Thieves"
+            class="w-full object-cover mr-2 rounded-3xl"
+          />
+        </div>
+      </div>
+      <div class="w-[80%] mx-auto py-20 text-white">
+        <!-- Titel + tekst -->
+        <div class="max-w-3xl mb-10">
+          <h2 class="text-4xl font-bold mb-6">Probeer ons concept zelf</h2>
+          <p class="text-lg text-gray-300">
+            Scan de QR-codes hieronder om het prototype van Time Thieves zelf te
+            ervaren. We hebben verschillende scenes toegevoegd die je kunt
+            bekijken en spelen. We raden aan om de scenes in de volgende
+            volgorde te bekijken: <br />
+            1. De introductie scene waarin de speler kennismaakt met de
+            professor en de Time Thieves<br />
+            2. De scene waarin de speler een quiz doet met de professor<br />
+            3. De scene waarin de speler een memory game speelt met Leyla<br />
+            4. De scene waarin de speler de time thieves verslaat en de
+            monumenten van Rotterdam redt<br />
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Afbeelding 1 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/qrintro.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Introductie
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/qrquiz.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Quiz
+              </p>
+            </div>
+          </div>
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/qrmemory.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Memory Game
+              </p>
+            </div>
+          </div>
+
+          <!-- Afbeelding 2 -->
+          <div class="relative w-full md:w-1/2">
+            <img
+              src="/images/qrslot.png"
+              class="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+            />
+
+            <!-- Tekst linksonder -->
+            <div class="absolute bottom-0 left-0 p-4">
+              <p
+                class="text-white text-lg font-semibold bg-black/50 px-4 py-2 rounded-xl"
+              >
+                Versla de Time Thieves
               </p>
             </div>
           </div>
